@@ -1,0 +1,2 @@
+beginner_tutorials:composiv_tryouts
+-DCATKIN_DEVEL_PREFIX=/home/kaan/eter_ws/devel -DCMAKE_INSTALL_PREFIX=/home/kaan/eter_ws/install -G Unix Makefiles
