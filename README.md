@@ -1,4 +1,4 @@
-v# Eteration Case Study
+# Eteration Case Study
 **This repository is contains basic filesystem operations in ROS Noetic, namely workspace, package and launch file configurations, node-to-node communications and is created befittingly regarding the requirements and standards set by Eteration.**
 
 Files include publisher-sucscriber nodes, unit tests, respective launch files as well as the documentation.
