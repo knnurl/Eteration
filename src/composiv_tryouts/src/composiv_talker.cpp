@@ -84,7 +84,7 @@ int main(int argc, char **argv)
 // %EndTag(PUBLISHER)%
 
 // %Tag(LOOP_RATE)%
-  ros::Rate loop_rate(10);
+  ros::Rate loop_rate(0.5);
 // %EndTag(LOOP_RATE)%
 
   /**
@@ -103,10 +103,23 @@ int main(int argc, char **argv)
     std_msgs::String msg;
 
     std::stringstream ss;
-    ss << "hello world " << count;
+    
+    if(count==1) {
+    	ss << "hello eteration team for " << count << "st time!" ;
+    }  
+    if(count==2) {
+    	ss << "hello eteration team for " << count << "nd time!" ;
+    }
+    if(count==3) {
+    	ss << "hello eteration team for " << count << "rd time!" ;
+    }
+    if(count>3) {
+    	ss << "hello eteration team for " << count << "th time!" ;
+    }
     msg.data = ss.str();
+    
 // %EndTag(FILL_MESSAGE)%
-
+    
 // %Tag(ROSCONSOLE)%
     ROS_INFO("%s", msg.data.c_str());
 // %EndTag(ROSCONSOLE)%
@@ -119,6 +132,7 @@ int main(int argc, char **argv)
      */
 // %Tag(PUBLISH)%
     chatter_pub.publish(msg);
+
 // %EndTag(PUBLISH)%
 
 // %Tag(SPINONCE)%

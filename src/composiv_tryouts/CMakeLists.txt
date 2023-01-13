@@ -9,6 +9,7 @@ project(composiv_tryouts)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
   roscpp
+  rospy
   std_msgs
 )
 
@@ -201,6 +202,8 @@ include_directories(
 #   target_link_libraries(${PROJECT_NAME}-test ${PROJECT_NAME})
 # endif()
 
+
+
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
 
@@ -210,5 +213,14 @@ target_link_libraries(composiv_talker ${catkin_LIBRARIES})
 add_executable(composiv_listener src/composiv_listener.cpp)
 target_link_libraries(composiv_listener ${catkin_LIBRARIES})
 
+catkin_install_python(PROGRAMS scripts/unittest_talker.py
+  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
 
+catkin_install_python(PROGRAMS scripts/unittest_listener.py
+  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
 
+catkin_install_python(PROGRAMS scripts/unittest_installation.py
+  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)

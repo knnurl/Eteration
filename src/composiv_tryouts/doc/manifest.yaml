@@ -1,0 +1,18 @@
+actions: []
+authors: ''
+brief: ''
+bugtracker: ''
+depends:
+- catkin
+- rospy
+- std_msgs
+- rosunit
+- roscpp
+description: The composiv_tryouts package
+license: BSD
+maintainers: kaan <kaan.urall@outlook.com>
+msgs: []
+package_type: package
+repo_url: ''
+srvs: []
+url: ''

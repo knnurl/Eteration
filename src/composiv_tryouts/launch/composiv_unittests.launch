@@ -1,0 +1,24 @@
+<launch>
+
+  <node 
+    pkg="composiv_tryouts" 
+    name="unittest_installation" 
+    type="unittest_installation.py" 
+    output="screen"> 
+  </node>
+
+  <node 
+    pkg="composiv_tryouts" 
+    name="unittest_talker" 
+    type="unittest_talker.py" 
+    output="screen"> 
+  </node> 
+   
+  <node 
+    pkg="composiv_tryouts" 
+    name="unittest_listener" 
+    type="unittest_listener.py" 
+    output="screen"> 
+  </node> 
+
+</launch> 

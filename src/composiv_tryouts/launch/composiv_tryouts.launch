@@ -1,14 +1,17 @@
 <launch>
-  <node
-    pkg="composiv_tryouts"
-    type="composiv_talker"
-    name="composiv_talker" 
-    output="screen"
-  />
+
   <node
     pkg="composiv_tryouts"
     type="composiv_listener"
     name="composiv_listener"
     output="screen"
   />
+
+  <node
+    pkg="composiv_tryouts"
+    type="composiv_talker"
+    name="composiv_talker" 
+    output="screen"
+  />
+  
 </launch> 

@@ -52,3 +52,15 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/composiv_tryouts" TYPE FILE FILES "/home/kaan/eter_ws/src/composiv_tryouts/package.xml")
 endif()
 
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/composiv_tryouts" TYPE PROGRAM FILES "/home/kaan/eter_ws/build/composiv_tryouts/catkin_generated/installspace/unittest_talker.py")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/composiv_tryouts" TYPE PROGRAM FILES "/home/kaan/eter_ws/build/composiv_tryouts/catkin_generated/installspace/unittest_listener.py")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/composiv_tryouts" TYPE PROGRAM FILES "/home/kaan/eter_ws/build/composiv_tryouts/catkin_generated/installspace/unittest_installation.py")
+endif()
+
