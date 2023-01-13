@@ -15,7 +15,8 @@ Created on 13.01.2023
 
 ![alt text](https://www.clearpathrobotics.com/assets/guides/melodic/ros/_images/ros101four.png)
 
-For a better organization of the filesystem, ROS allows for multiple workspaces and these workspaces contain packages that are the parent directory of folders containing source files, configurations, launch files etc.
+For a better organization of the filesystem, ROS allows for multiple workspaces and these workspaces contain packages that are the parent directory of folders containing source files, configurations, launch files etc. Nodes are the blocks of code that does the computing. When nodes are to communicate with each other, they do this over message centers called topics via rosmaster node. The launch files are used to start as many nodes as desired at once. 
+
 
 ![alt text](https://www.oreilly.com/api/v2/epubs/9781788627436/files/assets/070b1970-a7b7-43b5-93c6-b4aff111747c.png)
 
