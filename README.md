@@ -22,7 +22,7 @@ For a better organization of the filesystem, ROS allows for multiple workspaces 
 
 Having ROS Noetic already installed on the machine, the work began direcly by creating the necessary files.
 
-Chronological creation order these is as follows:
+Chronological creation order these is as follows:  
 eter_ws workspace, 
 composiv_tryouts package, 
 composiv_talker and composiv_listener nodes,
